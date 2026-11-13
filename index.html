@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER / NAVIGATIE CU LOGO IN FORMA DE CETATE (5 BASTIOANE) -->
+    <!-- HEADER / NAVIGATIE CU LOGO IN FORMA REALA DE CETATE (BASTIOANE ITALIANO-VAUBAN) -->
     <header style="background: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100;">
         <nav class="container" style="max-width: 1100px; margin: 0 auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
             
-            <!-- LOGO PENTAGONAL CU 5 BASTIOANE (CETATEA ORADEA) -->
+            <!-- LOGO CU 5 BASTIOANE IN FORMA DE VARF DE SAGEATA / INIMA DE NEAGRA -->
             <a href="index.html" class="logo-cetate" style="
                 text-decoration: none; 
                 display: flex; 
@@ -19,55 +19,55 @@
                 justify-content: center; 
                 align-items: center; 
                 text-align: center;
-                width: 155px; 
-                height: 150px; 
+                width: 175px; 
+                height: 170px; 
                 position: relative;
                 overflow: hidden;
-                background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(2, 132, 199, 0.78) 100%), url('images/cetatea-oradea.jpg') center/cover no-repeat;
-                /* Geometrie pentagonală reală: 5 bastioane ascuțite + 5 curtine interioare */
+                background: linear-gradient(135deg, rgba(15, 23, 42, 0.80) 0%, rgba(2, 132, 199, 0.75) 100%), url('images/cetatea-oradea.jpg') center/cover no-repeat;
+                /* Geometrie exactă Trace Italienne (25 puncte: 5 bastioane evazate cu gât îngustat) */
                 clip-path: polygon(
-                    50% 0%,    /* Bastion Nord */
-                    63% 26%,   /* Curtină NE */
-                    98% 35%,   /* Bastion Est */
-                    74% 58%,   /* Curtină SE */
-                    80% 94%,   /* Bastion Sud-Est */
-                    50% 76%,   /* Curtină Sud */
-                    20% 94%,   /* Bastion Sud-Vest */
-                    26% 58%,   /* Curtină SV */
-                    2% 35%,    /* Bastion Vest */
-                    37% 26%    /* Curtină NV */
+                    /* 1. Bastion Nord (sus) */
+                    45% 24%, 40% 15%, 50% 1%, 60% 15%, 55% 24%,
+                    /* 2. Bastion Nord-Est (dreapta sus) */
+                    71% 35%, 78% 27%, 98% 36%, 86% 49%, 75% 47%,
+                    /* 3. Bastion Sud-Est (dreapta jos) */
+                    68% 66%, 78% 72%, 79% 95%, 61% 85%, 59% 74%,
+                    /* 4. Bastion Sud-Vest (stânga jos) */
+                    41% 74%, 39% 85%, 21% 95%, 22% 72%, 32% 66%,
+                    /* 5. Bastion Nord-Vest (stânga sus) */
+                    25% 47%, 14% 49%, 2% 36%, 22% 27%, 29% 35%
                 );
                 transition: transform 0.3s ease, filter 0.3s ease;
-            " onmouseover="this.style.transform='scale(1.06)'; this.style.filter='brightness(1.1)';" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
+            " onmouseover="this.style.transform='scale(1.06)'; this.style.filter='brightness(1.12)';" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
                 
-                <!-- TEXTUL CENTRAT IN INTERIORUL CETATII -->
-                <div style="padding: 8px; z-index: 2; pointer-events: none; max-width: 115px; margin-top: 4px;">
+                <!-- TEXTUL CENTRAT IN CURTEA INTERIOARA A CETATII -->
+                <div style="padding: 6px; z-index: 2; pointer-events: none; max-width: 95px; margin-top: 2px;">
                     <strong style="
                         color: #ffffff; 
-                        font-size: 0.72rem; 
-                        letter-spacing: 0.8px; 
+                        font-size: 0.68rem; 
+                        letter-spacing: 0.6px; 
                         display: block; 
                         line-height: 1.15; 
                         font-weight: 800;
                         text-transform: uppercase;
-                        text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.95);
                     ">
                         Ortopedie<br>Oradea
                     </strong>
                     <div style="
-                        width: 32px; 
+                        width: 28px; 
                         height: 2px; 
                         background: #38bdf8; 
-                        margin: 5px auto;
-                        box-shadow: 0 1px 2px rgba(0,0,0,0.6);
+                        margin: 4px auto;
+                        box-shadow: 0 1px 2px rgba(0,0,0,0.7);
                     "></div>
                     <span style="
                         color: #38bdf8; 
-                        font-size: 0.62rem; 
+                        font-size: 0.58rem; 
                         font-weight: 700; 
                         display: block; 
                         line-height: 1.15;
-                        text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.95);
                     ">
                         Dr. Dejeu<br>Tudor Sergiu
                     </span>
