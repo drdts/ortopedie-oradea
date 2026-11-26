@@ -6,10 +6,10 @@
     <title>Articole Medicale | Dr. Dejeu Tudor Sergiu</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Layout cu sidebar stânga pe desktop + meniu sus pe mobil */
+        /* Layout cu sidebar fix stânga pe desktop + meniu sus pe mobil */
         .articles-wrapper {
             display: grid;
-            grid-template-columns: 260px 1fr;
+            grid-template-columns: 270px minmax(0, 1fr);
             gap: 35px;
             align-items: start;
         }
@@ -22,12 +22,18 @@
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+        }
+
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
         .toc-link {
             display: block;
             padding: 10px 12px;
-            margin-bottom: 6px;
             border-radius: 8px;
             text-decoration: none;
             color: #334155;
@@ -49,10 +55,11 @@
             display: flex;
             flex-direction: column;
             gap: 50px;
+            min-width: 0;
         }
 
         .article-card {
-            width: 90%;
+            width: 92%;
             background: #ffffff;
             border-radius: 16px;
             overflow: hidden;
@@ -130,7 +137,7 @@
 
     <!-- HEADER / NAVIGATION (CLEAN RECTANGULAR) -->
     <header style="background: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100;">
-        <nav class="container" style="max-width: 1150px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+        <nav class="container" style="max-width: 1180px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
             <a href="index.html" style="text-decoration: none; display: flex; flex-direction: column; border-left: 4px solid #0284c7; padding-left: 12px;">
                 <strong style="color: #0f172a; font-size: 1.15rem; letter-spacing: 0.5px; line-height: 1.2;">ORTOPEDIE ORADEA</strong>
                 <span style="color: #0284c7; font-size: 0.88rem; font-weight: 600; margin-top: 2px;">Dr. Dejeu Tudor Sergiu</span>
@@ -145,23 +152,23 @@
         </nav>
     </header>
 
-    <main class="container" style="max-width: 1150px; margin: 0 auto; padding: 40px 20px 70px 20px;">
+    <main class="container" style="max-width: 1180px; margin: 0 auto; padding: 40px 20px 70px 20px;">
         <h1 style="color: #0f172a; font-size: 2rem; margin-bottom: 10px;">Articole Medicale & Ghiduri pentru Pacienți</h1>
         <p style="color: #64748b; margin-bottom: 35px; font-size: 1.05rem;">Informații detaliate despre tehnici chirurgicale moderne, recuperare accelerată și gestionarea afecțiunilor articulare.</p>
 
         <div class="articles-wrapper">
 
-            <!-- MENIU RAPID STÂNGA (DESKTOP) / SUS (MOBIL) -->
+            <!-- MENIU RAPID STÂNGA (STICKY LA SCROLL) -->
             <aside class="toc-sidebar">
                 <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; color: #0284c7; margin-bottom: 12px; padding-left: 12px;">
                     Alege un articol
                 </div>
-                <nav>
+                <div class="toc-list">
                     <a href="#ghid-proteza" class="toc-link">1. Când este momentul pentru o proteză vs. salvare?</a>
                     <a href="#mers-ziua-1" class="toc-link">2. Mersul din prima zi după proteza de șold</a>
                     <a href="#dieta-artroza" class="toc-link">3. Dietă și artroza: ce ajută cu adevărat?</a>
                     <a href="#ruptura-lia" class="toc-link">4. Ruptura de Ligament Încrucișat Anterior (LIA)</a>
-                </nav>
+                </div>
             </aside>
 
             <!-- LISTA ARTICOLE (ALTERNATE STÂNGA / DREAPTA) -->
