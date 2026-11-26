@@ -132,113 +132,113 @@
             }
         }
         /* Compact single-row header */
-.site-header {
-    background: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+            .site-header {
+                background: #ffffff;
+                border-bottom: 1px solid #e2e8f0;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+            }
 
-.site-nav {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 14px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
+            .site-nav {
+                max-width: 1180px;
+                margin: 0 auto;
+                padding: 14px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
+            }
 
-.site-brand {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    border-left: 3px solid #0284c7;
-    padding-left: 10px;
-    flex-shrink: 0;
-}
+            .site-brand {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                border-left: 3px solid #0284c7;
+                padding-left: 10px;
+                flex-shrink: 0;
+            }
 
-.site-brand strong {
-    color: #0f172a;
-    font-size: 1.1rem;
-    letter-spacing: 0.4px;
-    line-height: 1.15;
-}
+            .site-brand strong {
+                color: #0f172a;
+                font-size: 1.1rem;
+                letter-spacing: 0.4px;
+                line-height: 1.15;
+            }
 
-.site-brand span {
-    color: #0284c7;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 2px;
-}
+            .site-brand span {
+                color: #0284c7;
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin-top: 2px;
+            }
 
-.site-nav-links {
-    display: flex;
-    gap: 22px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
+            .site-nav-links {
+                display: flex;
+                gap: 22px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+            }
 
-.site-nav-links a {
-    text-decoration: none;
-    color: #475569;
-    font-weight: 600;
-    font-size: 0.95rem;
-}
+            .site-nav-links a {
+                text-decoration: none;
+                color: #475569;
+                font-weight: 600;
+                font-size: 0.95rem;
+            }
 
-.site-nav-links a.active {
-    color: #0284c7;
-    font-weight: 700;
-}
+            .site-nav-links a.active {
+                color: #0284c7;
+                font-weight: 700;
+            }
 
-/* Mobile optimization: single compact row, no stacking */
-@media (max-width: 680px) {
-    .site-header {
-        position: static; /* Frees up screen height while scrolling on mobile */
-    }
-    .site-nav {
-        padding: 10px 14px;
-        gap: 8px;
-    }
-    .site-brand {
-        padding-left: 8px;
-        border-left-width: 3px;
-    }
-    .site-brand strong {
-        font-size: 0.85rem;
-        letter-spacing: 0.2px;
-    }
-    .site-brand span {
-        font-size: 0.72rem;
-        margin-top: 1px;
-    }
-    .site-nav-links {
-        gap: 11px;
-    }
-    .site-nav-links a {
-        font-size: 0.8rem;
-    }
-}
+            /* Mobile optimization: single compact row, no stacking */
+            @media (max-width: 680px) {
+            .site-header {
+                position: static; /* Frees up screen height while scrolling on mobile */
+            }
+            .site-nav {
+                padding: 10px 14px;
+                gap: 8px;
+            }
+            .site-brand {
+                padding-left: 8px;
+                border-left-width: 3px;
+            }
+            .site-brand strong {
+                font-size: 0.85rem;
+                letter-spacing: 0.2px;
+            }
+            .site-brand span {
+                font-size: 0.72rem;
+                margin-top: 1px;
+            }
+            .site-nav-links {
+                gap: 11px;
+            }
+            .site-nav-links a {
+                font-size: 0.8rem;
+            }
+            }
     </style>
 </head>
 <body style="background-color: #f8fafc; color: #1e293b; font-family: system-ui, -apple-system, sans-serif;">
 
-    <!-- HEADER / NAVIGATION (CLEAN RECTANGULAR) -->
-    <header style="background: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100;">
-        <nav class="container" style="max-width: 1180px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
-            <a href="index.html" style="text-decoration: none; display: flex; flex-direction: column; border-left: 4px solid #0284c7; padding-left: 12px;">
-                <strong style="color: #0f172a; font-size: 1.15rem; letter-spacing: 0.5px; line-height: 1.2;">ORTOPEDIE ORADEA</strong>
-                <span style="color: #0284c7; font-size: 0.88rem; font-weight: 600; margin-top: 2px;">Dr. Dejeu Tudor Sergiu</span>
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="site-brand">
+                <strong>ORTOPEDIE ORADEA</strong>
+                <span>Dr. Dejeu Tudor Sergiu</span>
             </a>
 
-            <ul class="nav-links" style="display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; align-items: center;">
-                <li><a href="index.html" style="text-decoration: none; color: #475569; font-weight: 600;">Acasă</a></li>
-                <li><a href="despre.html" style="text-decoration: none; color: #475569; font-weight: 600;">Despre</a></li>
-                <li><a href="articole.html" class="active" style="text-decoration: none; color: #0284c7; font-weight: 700;">Articole</a></li>
-                <li><a href="contact.html" style="text-decoration: none; color: #475569; font-weight: 600;">Contact</a></li>
+            <ul class="site-nav-links">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="articole.html" class="active">Articole</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
