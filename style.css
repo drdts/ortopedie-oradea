@@ -235,8 +235,8 @@ footer a {
 }
 
 .site-nav-links a.active {
-    color: #0284c7;
-    font-weight: 700;
+    color: #0284c7 !important;
+    font-weight: 700 !important;
 }
 
 /* Mobile optimization: single compact row, no stacking */
